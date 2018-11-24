@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ModalImage_Example' do
+  pod 'ModalImage', :path => '../'
+
+  target 'ModalImage_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
