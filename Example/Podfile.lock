@@ -1,0 +1,16 @@
+PODS:
+  - ModalImage (0.1.0)
+
+DEPENDENCIES:
+  - ModalImage (from `../`)
+
+EXTERNAL SOURCES:
+  ModalImage:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ModalImage: 49f9c67e77e8a0ca7baf370cc85bd4732997711c
+
+PODFILE CHECKSUM: 7937fd16275181682d28005a34b058efc31ab72e
+
+COCOAPODS: 1.5.3

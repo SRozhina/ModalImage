@@ -1,0 +1,6 @@
+framework module ModalImage {
+  umbrella header "ModalImage-umbrella.h"
+
+  export *
+  module * { export * }
+}
