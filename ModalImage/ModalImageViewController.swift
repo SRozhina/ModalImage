@@ -5,7 +5,7 @@
 //  Created by Sofia on 25/11/2018.
 //
 
-import Foundation
+import UIKit
 
 public class ModalImageViewController: UIViewController {
     @IBOutlet private weak var imageView: UIImageView!
@@ -58,7 +58,6 @@ public class ModalImageViewController: UIViewController {
         
         setupImageViews()
         setupBarsStubs()
-        setupOriginalImageFrameHeight()
         setupGestureRecognizers()
         configureImageInStartPosition()
     }
@@ -101,11 +100,6 @@ public class ModalImageViewController: UIViewController {
     
     private func setupGestureRecognizers() {
         singleTapGesture.require(toFail: doubleTapGesture)
-    }
-    
-    private func setupOriginalImageFrameHeight() {
-        originalImageFrame.origin.y += navBarHeight.constant
-        originalImageFrame.origin.y += statusBarView.frame.height
     }
     
     private func dismissAction() {
