@@ -22,7 +22,7 @@ pod 'ModalImage'
 
 ## Author
 
-sofia.rozhina@gmail.com, rsofico@gmail.com
+sofia.rozhina@gmail.com
 
 ## License
 
