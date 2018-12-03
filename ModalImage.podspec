@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'ModalImage'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'ModalImage is for modal presenting images in an app.'
 
   s.homepage         = 'https://github.com/SRozhina/ModalImage'
