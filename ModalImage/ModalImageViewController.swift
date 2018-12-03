@@ -33,13 +33,19 @@ public class ModalImageViewController: UIViewController {
     private var image: UIImage!
     
     private var primaryDuration = 0.25
+    private var backgroundColor: UIColor = .black
     private var blackLayerAlpha: CGFloat = 0.6
+    private var useNavbar: Bool = true
+    private var useTabbar: Bool = true
     private var topScrollInset: CGFloat { return (scrollView.frame.height - imageView.frame.height) / 2.0 }
     private var statusBarStyle: UIStatusBarStyle = .lightContent
     
     public static func build(with imageView: UIImageView,
                              animationDuration: Double,
-                             blackLayerOpacity: CGFloat) -> ModalImageViewController? {
+                             backgroundColor: UIColor,
+                             blackLayerOpacity: CGFloat,
+                             useNavbar: Bool,
+                             useTabbar: Bool) -> ModalImageViewController? {
         let modalImageStoryboard = UIStoryboard(name: "ModalImageView",
                                                 bundle: Bundle(for: ModalImageViewController.classForCoder()))
         let modalImageVC = modalImageStoryboard.instantiateInitialViewController() as? ModalImageViewController
@@ -47,7 +53,10 @@ public class ModalImageViewController: UIViewController {
         modalImageVC?.image = image
         modalImageVC?.originalImageFrame = frame
         modalImageVC?.primaryDuration = animationDuration
+        modalImageVC?.backgroundColor = backgroundColor
         modalImageVC?.blackLayerAlpha = blackLayerOpacity
+        modalImageVC?.useNavbar = useNavbar
+        modalImageVC?.useTabbar = useTabbar
         return modalImageVC
     }
     
@@ -58,6 +67,7 @@ public class ModalImageViewController: UIViewController {
         
         setupImageViews()
         setupBarsStubs()
+        setupBackground()
         setupGestureRecognizers()
         configureImageInStartPosition()
     }
@@ -90,12 +100,18 @@ public class ModalImageViewController: UIViewController {
     }
     
     private func setupBarsStubs() {
-        navBarHeight.constant = delegate?.navBarImage?.size.height ?? 0
-        tabBarHeight.constant = delegate?.tabBarImage?.size.height ?? 0
+        navBarHeight.constant = useNavbar ? delegate?.navBarImage?.size.height ?? 0 : 0
+        tabBarHeight.constant = useTabbar ? delegate?.tabBarImage?.size.height ?? 0 : 0
         navBarImageView.image = delegate?.navBarImage
         tabbarImageView.image = delegate?.tabBarImage
         setNavBarStubIsHidden(false)
         setTabBarStubIsHidden(false)
+    }
+    
+    private func setupBackground() {
+        dimmerLayer.backgroundColor = backgroundColor
+        navBarDimmerLayer.backgroundColor = backgroundColor
+        tabBarDimmerLayer.backgroundColor = backgroundColor
     }
     
     private func setupGestureRecognizers() {
