@@ -7,6 +7,7 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Sofia Rozhina' => 'sofia.rozhina@gmail.com' }
   s.source           = { :git => 'https://github.com/SRozhina/ModalImage.git', :tag => s.version.to_s }
+  s.swift_version = '4.2'
 
   s.ios.deployment_target = '12.1'
   s.source_files          = 'ModalImage/**/*.{swift}'
