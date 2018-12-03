@@ -9,10 +9,10 @@ import UIKit
 
 extension UIViewController: ModalImageDelegate {
     //TODO backgroundColor?
-    public func showFullScreenImage(from imageView: UIImageView, animationDuration: Double = 0.25, backgroundOpacity: CGFloat = 0.6) {
+    public func showFullScreenImage(from imageView: UIImageView, animationDuration: Double = 0.25, backgroundAlpha: CGFloat = 0.6) {
         guard let modalImageVC = ModalImageViewController.build(with: imageView,
                                                                 animationDuration: animationDuration,
-                                                                blackLayerOpacity: backgroundOpacity) else { return }
+                                                                blackLayerOpacity: backgroundAlpha) else { return }
         modalImageVC.modalPresentationStyle = .overFullScreen
         modalImageVC.delegate = self
         

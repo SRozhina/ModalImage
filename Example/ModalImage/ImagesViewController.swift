@@ -9,20 +9,35 @@
 import UIKit
 import ModalImage
 
-class NavbarViewController: UIViewController {
+class ImagesViewController: UIViewController {
     @IBOutlet private weak var tableView: UITableView!
+    @IBOutlet weak var closeButtonHeight: NSLayoutConstraint!
+    
     private let images: [UIImage] = { Array(1...10).compactMap { UIImage(named: "kitten\($0)") } }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupTableView()
+        setupCloseButton()
+    }
+    
+    private func setupTableView() {
         tableView.dataSource = self
         tableView.delegate = self
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 44
     }
+    
+    private func setupCloseButton() {
+        closeButtonHeight.constant = navigationController == nil ? 30 : 0
+    }
+    
+    @IBAction func closeButtonTapped(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
 }
 
-extension NavbarViewController: UITableViewDataSource, UITableViewDelegate {
+extension ImagesViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return images.count
     }
@@ -43,33 +58,10 @@ extension NavbarViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func imageTappedAction(imageView: UIImageView) {
-        showFullScreenImage(from: imageView)
+        if navigationController != nil {
+            showFullScreenImage(from: imageView)
+        } else {
+            showFullScreenImage(from: imageView, animationDuration: 0.5, backgroundAlpha: 1)
+        }
     }
 }
-
-class ImageCell: UITableViewCell {
-    @IBOutlet private weak var cellImageView: UIImageView!
-    private var imageTapAction: ((UIImageView) -> Void)?
-    
-    func setImage(_ image: UIImage) {
-        cellImageView.image = image
-    }
-    
-    func setTappedAction(_ action: @escaping (UIImageView) -> Void) {
-        self.imageTapAction = action
-        let imageTap = UITapGestureRecognizer(target: self, action: #selector(openImageAction))
-        cellImageView.addGestureRecognizer(imageTap)
-    }
-    
-    @objc
-    private func openImageAction() {
-        imageTapAction?(cellImageView)
-    }
-    
-}
-
-extension UIImage {
-    var cropRatio: CGFloat { return self.size.width / self.size.height }
-}
-
-
