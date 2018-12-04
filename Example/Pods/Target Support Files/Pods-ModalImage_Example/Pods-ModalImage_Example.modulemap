@@ -1,4 +1,4 @@
-framework module Pods_ModalImage_Example {
+module Pods_ModalImage_Example {
   umbrella header "Pods-ModalImage_Example-umbrella.h"
 
   export *

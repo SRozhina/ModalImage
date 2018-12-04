@@ -1,8 +1,8 @@
 {
   "name": "ModalImage",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "summary": "ModalImage is for modal presenting images in an app.",
-  "homepage": "https://github.com/sofia.rozhina@gmail.com/ModalImage",
+  "homepage": "https://github.com/SRozhina/ModalImage",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -11,11 +11,12 @@
     "Sofia Rozhina": "sofia.rozhina@gmail.com"
   },
   "source": {
-    "git": "https://github.com/sofia.rozhina@gmail.com/ModalImage.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/SRozhina/ModalImage.git",
+    "tag": "0.1.1"
   },
+  "swift_version": "4.2",
   "platforms": {
-    "ios": "12.0"
+    "ios": "12.1"
   },
   "source_files": "ModalImage/**/*.{swift}",
   "resources": "ModalImage/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}",
