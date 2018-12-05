@@ -34,16 +34,18 @@ public class ModalImageViewController: UIViewController {
     
     private var primaryDuration = 0.25
     private var backgroundColor: UIColor = .black
-    private var blackLayerAlpha: CGFloat = 0.6
+    private var backgroundAlpha: CGFloat = 0.6
     private var useNavbar: Bool = true
     private var useTabbar: Bool = true
+    private var backgroundBlur: Bool = false
     private var topScrollInset: CGFloat { return (scrollView.frame.height - imageView.frame.height) / 2.0 }
     private var statusBarStyle: UIStatusBarStyle = .lightContent
     
     public static func build(with imageView: UIImageView,
                              animationDuration: Double,
                              backgroundColor: UIColor,
-                             blackLayerOpacity: CGFloat,
+                             backgroundAlpha: CGFloat,
+                             backgroundBlur: Bool,
                              useNavbar: Bool,
                              useTabbar: Bool) -> ModalImageViewController? {
         let modalImageStoryboard = UIStoryboard(name: "ModalImageView",
@@ -54,7 +56,8 @@ public class ModalImageViewController: UIViewController {
         modalImageVC?.originalImageFrame = frame
         modalImageVC?.primaryDuration = animationDuration
         modalImageVC?.backgroundColor = backgroundColor
-        modalImageVC?.blackLayerAlpha = blackLayerOpacity
+        modalImageVC?.backgroundAlpha = backgroundAlpha
+        modalImageVC?.backgroundBlur = backgroundBlur
         modalImageVC?.useNavbar = useNavbar
         modalImageVC?.useTabbar = useTabbar
         return modalImageVC
@@ -109,6 +112,16 @@ public class ModalImageViewController: UIViewController {
     }
     
     private func setupBackground() {
+        if backgroundBlur {
+            dimmerLayer.isHidden = true
+            let blurEffect = UIBlurEffect(style: .dark)
+            let blurEffectView = UIVisualEffectView(effect: blurEffect)
+            blurEffectView.frame = view.bounds
+            blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+            view.addSubview(blurEffectView)
+            view.sendSubviewToBack(blurEffectView)
+            return
+        }
         dimmerLayer.backgroundColor = backgroundColor
         navBarDimmerLayer.backgroundColor = backgroundColor
         tabBarDimmerLayer.backgroundColor = backgroundColor
@@ -171,7 +184,7 @@ extension ModalImageViewController {
                         self.imageView.center = self.view.center
                         self.scrollView.contentInset.left = 0
                         self.scrollView.contentInset.top = (self.view.frame.height - contentHeight) / 2
-                        self.setBlackLayersAlpha(to: self.blackLayerAlpha)
+                        self.setBlackLayersAlpha(to: self.backgroundAlpha)
                         self.view.layoutIfNeeded()
         }, completion: completion)
     }
@@ -215,7 +228,7 @@ extension ModalImageViewController {
         case .changed:
             imageView.center = getChanged()
             if UIDevice.current.userInterfaceIdiom == .phone {
-                setBlackLayersAlpha(to: blackLayerAlpha - (blackLayerAlpha * getProgress()))
+                setBlackLayersAlpha(to: backgroundAlpha - (backgroundAlpha * getProgress()))
             }
         case .ended:
             if getProgress() > 0.5 || getVelocity() > 1000 {
@@ -227,7 +240,7 @@ extension ModalImageViewController {
             UIView.animate(withDuration: primaryDuration,
                            animations: {
                             self.imageView.frame.origin = CGPoint(x: 0, y: 0)
-                            self.setBlackLayersAlpha(to: self.blackLayerAlpha)
+                            self.setBlackLayersAlpha(to: self.backgroundAlpha)
             }, completion: nil)
         }
     }

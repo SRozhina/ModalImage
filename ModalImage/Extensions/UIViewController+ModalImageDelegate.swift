@@ -17,9 +17,28 @@ extension UIViewController: ModalImageDelegate {
         guard let modalImageVC = ModalImageViewController.build(with: imageView,
                                                                 animationDuration: animationDuration,
                                                                 backgroundColor: backgroundColor,
-                                                                blackLayerOpacity: backgroundAlpha,
+                                                                backgroundAlpha: backgroundAlpha,
+                                                                backgroundBlur: false,
                                                                 useNavbar: useNavbar,
                                                                 useTabbar: useTabbar) else { return }
+        modalImageVC.modalPresentationStyle = .overFullScreen
+        modalImageVC.delegate = self
+        
+        present(modalImageVC, animated: false)
+    }
+    
+    public func showFullScreenImage(from imageView: UIImageView,
+                                    animationDuration: Double = 0.25,
+                                    backgroundColor: UIColor = .black,
+                                    backgroundAlpha: CGFloat = 0.6,
+                                    backgroundBlur: Bool = true) {
+        guard let modalImageVC = ModalImageViewController.build(with: imageView,
+                                                                animationDuration: animationDuration,
+                                                                backgroundColor: backgroundColor,
+                                                                backgroundAlpha: backgroundAlpha,
+                                                                backgroundBlur: backgroundBlur,
+                                                                useNavbar: false,
+                                                                useTabbar: false) else { return }
         modalImageVC.modalPresentationStyle = .overFullScreen
         modalImageVC.delegate = self
         
