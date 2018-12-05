@@ -9,6 +9,7 @@ An easy to use library for fulscreen modal image presentation with zooming capab
 
 Planned:
 - Implement image sharing
+- Blur background
 - Horizontal orientation support
 - Carthage support
 
@@ -38,6 +39,50 @@ showFullScreenImage(from: imageView)
 And voila
 
 <img src="./ReadmeGiffs/Example.gif" width="300"/>
+
+## More Features
+
+Additionally you could change background color and opacity.
+Just add a couple of parameters
+```swift
+showFullScreenImage(from: imageView, backgroundColor: .yellow, backgroundAlpha: 1)
+```
+<img src="./ReadmeGiffs/Example_default.gif" width="300"/><img src="./ReadmeGiffs/Example_background.gif" width="300"/>
+
+And of course you could use it separately.
+```swift
+showFullScreenImage(from: imageView, backgroundColor: .yellow)
+```
+```swift
+showFullScreenImage(from: imageView, backgroundAlpha: 1)
+```
+Default values for background color is black and for alpha is 0.6
+
+Also you could change animation duration (in seconds).
+```swift
+showFullScreenImage(from: imageView, animationDuration: 1)
+```
+<img src="./ReadmeGiffs/Example_default.gif" width="300"/><img src="./ReadmeGiffs/Example_duration.gif" width="300"/>
+Default value is 0.25
+
+And you could change usage of Navigation Bar and TabBar stubs. 
+Also you could change animation duration (in seconds).
+```swift
+showFullScreenImage(from: imageView, useNavbar: false)
+showFullScreenImage(from: imageView, useTabbar: false)
+```
+There are some examples to show the difference.
+
+<img src="./ReadmeGiffs/Example_NavbarStub_Yes.gif" width="300"/><img src="./ReadmeGiffs/Example_NavbarStub_No.gif" width="300"/>
+
+<img src="./ReadmeGiffs/Example_TabbarStub_Yes.gif" width="300"/><img src="./ReadmeGiffs/Example_TabbarStub_No.gif" width="300"/>
+
+Default values are true.
+
+To use all together use next initializer
+```swift
+showFullScreenImage(from: imageView, animationDuration: 0.25, backgroundColor: .black, backgroundAlpha: 0.6, useNavbar: true, useTabbar: true)
+```
 
 ## Author
 
