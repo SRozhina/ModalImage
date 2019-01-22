@@ -7,134 +7,195 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		193B607F2093B0BF5E6680F47D74F90B /* ModalImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 11590284B8BF0E33ED46345967F22431 /* ModalImage-dummy.m */; };
-		45F206D3EB0C5107A171C5D79D2B9B18 /* CALayer+screenshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F08CC21BF004558D41A3C974EDE16A /* CALayer+screenshot.swift */; };
-		57E3F55DFAD1C6A5FB6AD61EA047869A /* UIViewController+ModalImageDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC10C45F322FA6E0E77BD3375C8EDBD8 /* UIViewController+ModalImageDelegate.swift */; };
-		617CF9A240DC6732A967C1CE931975A1 /* ModalImageDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED311DF9FFA67A36256DFFBF6A959244 /* ModalImageDelegate.swift */; };
-		7A6FB5F649902DD991E5147471841B04 /* Pods-ModalImage_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DDAFAF0DFFCD5DAC2F80EF6FDDDEA39 /* Pods-ModalImage_Example-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		82E3723F07C3287800DDDC1ECE5D803F /* ModalImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C30E6BA9BA79AEFFA1E059B7B1C455A /* ModalImageViewController.swift */; };
-		AD3C2B9D1332B1A97414DB079F13CAFD /* Pods-ModalImage_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 65864B9B683BB5C79AEF4B12AB051144 /* Pods-ModalImage_Example-dummy.m */; };
-		B5EE1476BF91EAF225C28DC797EDFE1C /* ModalImage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BA458B575D4A9B9828F60557785C1188 /* ModalImage-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		E83B9163EE8029ABE0CDAF43988C65CE /* UIImageView+originalFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F608C3487D1DB95B76DE0F74F16D01 /* UIImageView+originalFrame.swift */; };
+		0A5A11EE85181BA88686FE72F95085E7 /* ModalImageDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272752873706FB35178BB55DB7E3C1E9 /* ModalImageDelegate.swift */; };
+		3DE9F3B8DFD594F6F533454C764FCC7C /* UIViewController+ModalImageDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B3434203B9EF32DDE1E87AE28888C6 /* UIViewController+ModalImageDelegate.swift */; };
+		467BBC5A07D7883C5759536083ED2F5D /* ModalImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27AC692C98683386446CB9D1369BBB6 /* ModalImageViewController.swift */; };
+		49F881AEE64B348A5EA44AF7ACC35494 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD46FBC041420035C341CC6342582587 /* UIKit.framework */; };
+		841E3FD3F8ED27AC7AA76EACEAE5F610 /* ModalImage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 639BF901CC612BFC086B1EA66840B50B /* ModalImage-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		845076C4D719AA50A5B05FD6A8624C73 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB11AA42DBC8FB7616427D0F350F5F01 /* Background.swift */; };
+		8F579A8CE1DD82CDBCB02E6A3F11C381 /* CALayer+screenshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B73D2C467BBBEAF5B779BB720521725 /* CALayer+screenshot.swift */; };
+		95BC21E7D8755C612DFA4257AC59B71C /* ModalImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 720C71EB34E407F5ECC6E64CB565F7DC /* ModalImage-dummy.m */; };
+		C5ACEC4BBAA77DE8756287C7FF98D211 /* UIImageView+originalFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4664B0D681699E4268B998339B4F8B3 /* UIImageView+originalFrame.swift */; };
+		EE59E2AC925D87004E1AF55A4D488244 /* Pods-ModalImage_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DEEF117A8E44A8940D4687EF1236FFB /* Pods-ModalImage_Example-dummy.m */; };
+		F4EBADB4B583604C8B3F40EF3E288278 /* Pods-ModalImage_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 252ECFF921E89E05A9E37DA73D21A16D /* Pods-ModalImage_Example-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5921FD2135E33032A23C4271EA2B568E /* PBXContainerItemProxy */ = {
+		719E70BD35791053703F508D45A1A83F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 251C3DEB96D40AD0EAD9AB8BE9CD952E;
+			remoteGlobalIDString = 367CFAF7D4CC3C075AA872179239E3D9;
 			remoteInfo = ModalImage;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0DDAFAF0DFFCD5DAC2F80EF6FDDDEA39 /* Pods-ModalImage_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ModalImage_Example-umbrella.h"; sourceTree = "<group>"; };
-		11590284B8BF0E33ED46345967F22431 /* ModalImage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ModalImage-dummy.m"; sourceTree = "<group>"; };
-		14F08CC21BF004558D41A3C974EDE16A /* CALayer+screenshot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "CALayer+screenshot.swift"; sourceTree = "<group>"; };
-		197CF9716DE75B07C393A9F8C6658A5B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		1C30E6BA9BA79AEFFA1E059B7B1C455A /* ModalImageViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModalImageViewController.swift; path = ModalImage/ModalImageViewController.swift; sourceTree = "<group>"; };
-		245DD46A8F8CC0D049BC33FA009EFB5A /* libPods-ModalImage_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ModalImage_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4432D4E627F747390F10EA42F3733CD2 /* Pods-ModalImage_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ModalImage_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		5DC27B35482B415AAE9B43A5EE3FB3F0 /* Pods-ModalImage_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ModalImage_Example-resources.sh"; sourceTree = "<group>"; };
-		646C53175AEA6388B3D360547AE902A5 /* ModalImage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ModalImage.modulemap; sourceTree = "<group>"; };
-		65864B9B683BB5C79AEF4B12AB051144 /* Pods-ModalImage_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ModalImage_Example-dummy.m"; sourceTree = "<group>"; };
-		718E78A38DFED9914A2ED9075E742A52 /* Pods-ModalImage_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ModalImage_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		748344119266EBD50C9E3F97D2020678 /* libModalImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libModalImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		9492931CF829ECB32F5EC5F65A1AF784 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		AC4498AA8C522A5B5D2E9E5AF4104202 /* ModalImage.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = ModalImage.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		B36AB396275697EEE1A5B13BA8A38FE3 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		B6F89ABF8906DAE9ADF4F503E690FBE2 /* ModalImageView.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = ModalImageView.storyboard; path = ModalImage/ModalImageView.storyboard; sourceTree = "<group>"; };
-		B77701A5B99402E50FA2845C1E8AD892 /* Pods-ModalImage_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ModalImage_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		BA458B575D4A9B9828F60557785C1188 /* ModalImage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ModalImage-umbrella.h"; sourceTree = "<group>"; };
-		C5916068CD8B1E35A04108D78E7305CC /* ModalImage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ModalImage.xcconfig; sourceTree = "<group>"; };
-		CC10C45F322FA6E0E77BD3375C8EDBD8 /* UIViewController+ModalImageDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIViewController+ModalImageDelegate.swift"; sourceTree = "<group>"; };
-		E419006D34E03BF9055FFCAB05B3BC53 /* Pods-ModalImage_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ModalImage_Example.release.xcconfig"; sourceTree = "<group>"; };
-		E6F608C3487D1DB95B76DE0F74F16D01 /* UIImageView+originalFrame.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIImageView+originalFrame.swift"; sourceTree = "<group>"; };
-		ED311DF9FFA67A36256DFFBF6A959244 /* ModalImageDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModalImageDelegate.swift; path = ModalImage/ModalImageDelegate.swift; sourceTree = "<group>"; };
-		F7F8EF201C11221CC3E7F7AD5433E56F /* Pods-ModalImage_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ModalImage_Example.modulemap"; sourceTree = "<group>"; };
-		FCBC178DA5E721BB87DADB4D3C63D70A /* ModalImage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ModalImage-prefix.pch"; sourceTree = "<group>"; };
+		245DD46A8F8CC0D049BC33FA009EFB5A /* libPods-ModalImage_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-ModalImage_Example.a"; path = "libPods-ModalImage_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		252ECFF921E89E05A9E37DA73D21A16D /* Pods-ModalImage_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ModalImage_Example-umbrella.h"; sourceTree = "<group>"; };
+		272752873706FB35178BB55DB7E3C1E9 /* ModalImageDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModalImageDelegate.swift; path = ModalImage/ModalImageDelegate.swift; sourceTree = "<group>"; };
+		43AA768C6F57DF42B2BD9AD489121390 /* ModalImage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ModalImage-prefix.pch"; sourceTree = "<group>"; };
+		5C3A625FDDB3D4D5E747CD6D8077C5E2 /* Pods-ModalImage_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ModalImage_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		5D67E3A6BD420C487701E2C118ADCFE4 /* Pods-ModalImage_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ModalImage_Example.release.xcconfig"; sourceTree = "<group>"; };
+		639BF901CC612BFC086B1EA66840B50B /* ModalImage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ModalImage-umbrella.h"; path = "../../Headers/Public/ModalImage/ModalImage-umbrella.h"; sourceTree = "<group>"; };
+		69839F9598E4EE605705CC7C5673D922 /* Pods-ModalImage_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ModalImage_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		6DEEF117A8E44A8940D4687EF1236FFB /* Pods-ModalImage_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ModalImage_Example-dummy.m"; sourceTree = "<group>"; };
+		720C71EB34E407F5ECC6E64CB565F7DC /* ModalImage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ModalImage-dummy.m"; sourceTree = "<group>"; };
+		748344119266EBD50C9E3F97D2020678 /* libModalImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libModalImage.a; path = libModalImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BE6062FF36E05991BDEC1D1E51C1818 /* Pods-ModalImage_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ModalImage_Example-frameworks.sh"; sourceTree = "<group>"; };
+		830AE930D41ED1E02338A2FFCA0A448C /* Pods-ModalImage_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ModalImage_Example.modulemap"; sourceTree = "<group>"; };
+		8AE96F6DFAB19E1A107DC2C0FC1F6EC8 /* ModalImageView.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = ModalImageView.storyboard; path = ModalImage/ModalImageView.storyboard; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9B73D2C467BBBEAF5B779BB720521725 /* CALayer+screenshot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "CALayer+screenshot.swift"; sourceTree = "<group>"; };
+		A37BC00A6D16BCA17E9A98BE841C3A1C /* Pods-ModalImage_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ModalImage_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AB11AA42DBC8FB7616427D0F350F5F01 /* Background.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
+		AFE441F1C85868AB37BE0135497F7539 /* ModalImage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = ModalImage.modulemap; path = ../../Headers/Public/ModalImage/ModalImage.modulemap; sourceTree = "<group>"; };
+		B20C4D52287A85EC6C76BF9C54EEF45B /* ModalImage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ModalImage.xcconfig; sourceTree = "<group>"; };
+		C8B3434203B9EF32DDE1E87AE28888C6 /* UIViewController+ModalImageDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIViewController+ModalImageDelegate.swift"; sourceTree = "<group>"; };
+		D51C7138353516A459984FC377A9FA3F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		DD46FBC041420035C341CC6342582587 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		E4664B0D681699E4268B998339B4F8B3 /* UIImageView+originalFrame.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIImageView+originalFrame.swift"; sourceTree = "<group>"; };
+		E475880C1A27E22F7E55DBC00B953FC9 /* ModalImage.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = ModalImage.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E7144DA948E605EE525ADC8933F46266 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		F27AC692C98683386446CB9D1369BBB6 /* ModalImageViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModalImageViewController.swift; path = ModalImage/ModalImageViewController.swift; sourceTree = "<group>"; };
+		F9E35324F845BBED2CF66B7C2D3F2F25 /* Pods-ModalImage_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ModalImage_Example-resources.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5B534D1D64AD19890BE2F8CDF4F58EF8 /* Frameworks */ = {
+		0D27DD483A852246230CC994CB291D5E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		822D40F3C55FE0BA18396912D87A7C81 /* Frameworks */ = {
+		A5C04B62DF845B2F33DC40233C6BE9DB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49F881AEE64B348A5EA44AF7ACC35494 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */ = {
+		029AB768CEEDC61021177E7D3917DCE9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				8AE96F6DFAB19E1A107DC2C0FC1F6EC8 /* ModalImageView.storyboard */,
 			);
-			name = Frameworks;
+			name = Resources;
 			sourceTree = "<group>";
 		};
-		113447E130AA14DD16F4DD90807F3BC0 /* Targets Support Files */ = {
+		3E06633DCA05D14B7BD666A2FFC95B33 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				E1240A452BDD7C41D272B34AC6B385C5 /* Pods-ModalImage_Example */,
+				B3AEFD464F47FCD93DA9AEE91A11ADE6 /* ModalImage */,
 			);
-			name = "Targets Support Files";
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		18A4205B6BEB728A9ADF5B7E04E56E55 /* ModalImage */ = {
+		43ED30AB3541FD43FFC894828E9E3CFD /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				ED311DF9FFA67A36256DFFBF6A959244 /* ModalImageDelegate.swift */,
-				1C30E6BA9BA79AEFFA1E059B7B1C455A /* ModalImageViewController.swift */,
-				FD2FF6F0650B2D89C5997B88A589473C /* Extensions */,
-				B92EEF5AECCBA48F34A9B39DDAF82712 /* Pod */,
-				C5E73D3F8BC24CBFDE7012E37841984E /* Resources */,
-				62931FE7D4EA262E29CA0583EFA377DB /* Support Files */,
-			);
-			name = ModalImage;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		62931FE7D4EA262E29CA0583EFA377DB /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				646C53175AEA6388B3D360547AE902A5 /* ModalImage.modulemap */,
-				C5916068CD8B1E35A04108D78E7305CC /* ModalImage.xcconfig */,
-				11590284B8BF0E33ED46345967F22431 /* ModalImage-dummy.m */,
-				FCBC178DA5E721BB87DADB4D3C63D70A /* ModalImage-prefix.pch */,
-				BA458B575D4A9B9828F60557785C1188 /* ModalImage-umbrella.h */,
+				AFE441F1C85868AB37BE0135497F7539 /* ModalImage.modulemap */,
+				B20C4D52287A85EC6C76BF9C54EEF45B /* ModalImage.xcconfig */,
+				720C71EB34E407F5ECC6E64CB565F7DC /* ModalImage-dummy.m */,
+				43AA768C6F57DF42B2BD9AD489121390 /* ModalImage-prefix.pch */,
+				639BF901CC612BFC086B1EA66840B50B /* ModalImage-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/ModalImage";
 			sourceTree = "<group>";
 		};
+		470E4F9ACBA570CB14DF854874837E31 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				E7144DA948E605EE525ADC8933F46266 /* LICENSE */,
+				E475880C1A27E22F7E55DBC00B953FC9 /* ModalImage.podspec */,
+				D51C7138353516A459984FC377A9FA3F /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		4AEEE3C0FF459324A9B1D0B9072230A1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AB11AA42DBC8FB7616427D0F350F5F01 /* Background.swift */,
+			);
+			name = Models;
+			path = ModalImage/Models;
+			sourceTree = "<group>";
+		};
+		66FE5017018F3C2BACF4E716C1D526B7 /* Pods-ModalImage_Example */ = {
+			isa = PBXGroup;
+			children = (
+				830AE930D41ED1E02338A2FFCA0A448C /* Pods-ModalImage_Example.modulemap */,
+				A37BC00A6D16BCA17E9A98BE841C3A1C /* Pods-ModalImage_Example-acknowledgements.markdown */,
+				5C3A625FDDB3D4D5E747CD6D8077C5E2 /* Pods-ModalImage_Example-acknowledgements.plist */,
+				6DEEF117A8E44A8940D4687EF1236FFB /* Pods-ModalImage_Example-dummy.m */,
+				7BE6062FF36E05991BDEC1D1E51C1818 /* Pods-ModalImage_Example-frameworks.sh */,
+				F9E35324F845BBED2CF66B7C2D3F2F25 /* Pods-ModalImage_Example-resources.sh */,
+				252ECFF921E89E05A9E37DA73D21A16D /* Pods-ModalImage_Example-umbrella.h */,
+				69839F9598E4EE605705CC7C5673D922 /* Pods-ModalImage_Example.debug.xcconfig */,
+				5D67E3A6BD420C487701E2C118ADCFE4 /* Pods-ModalImage_Example.release.xcconfig */,
+			);
+			name = "Pods-ModalImage_Example";
+			path = "Target Support Files/Pods-ModalImage_Example";
+			sourceTree = "<group>";
+		};
+		73E24656B5B8579D8BF1038389D39629 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9B73D2C467BBBEAF5B779BB720521725 /* CALayer+screenshot.swift */,
+				E4664B0D681699E4268B998339B4F8B3 /* UIImageView+originalFrame.swift */,
+				C8B3434203B9EF32DDE1E87AE28888C6 /* UIViewController+ModalImageDelegate.swift */,
+			);
+			name = Extensions;
+			path = ModalImage/Extensions;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
-				B36AB396275697EEE1A5B13BA8A38FE3 /* Podfile */,
-				FBBDDA0FEE4C310EA7D97D6B8D70C409 /* Development Pods */,
-				0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */,
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				3E06633DCA05D14B7BD666A2FFC95B33 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				C47A77289224EAB7223A7D0A5B036671 /* Products */,
-				113447E130AA14DD16F4DD90807F3BC0 /* Targets Support Files */,
+				9A0C053C1AF165C5DABEC87264686E63 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		B92EEF5AECCBA48F34A9B39DDAF82712 /* Pod */ = {
+		9A0C053C1AF165C5DABEC87264686E63 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				9492931CF829ECB32F5EC5F65A1AF784 /* LICENSE */,
-				AC4498AA8C522A5B5D2E9E5AF4104202 /* ModalImage.podspec */,
-				197CF9716DE75B07C393A9F8C6658A5B /* README.md */,
+				66FE5017018F3C2BACF4E716C1D526B7 /* Pods-ModalImage_Example */,
 			);
-			name = Pod;
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		B3AEFD464F47FCD93DA9AEE91A11ADE6 /* ModalImage */ = {
+			isa = PBXGroup;
+			children = (
+				272752873706FB35178BB55DB7E3C1E9 /* ModalImageDelegate.swift */,
+				F27AC692C98683386446CB9D1369BBB6 /* ModalImageViewController.swift */,
+				73E24656B5B8579D8BF1038389D39629 /* Extensions */,
+				4AEEE3C0FF459324A9B1D0B9072230A1 /* Models */,
+				470E4F9ACBA570CB14DF854874837E31 /* Pod */,
+				029AB768CEEDC61021177E7D3917DCE9 /* Resources */,
+				43ED30AB3541FD43FFC894828E9E3CFD /* Support Files */,
+			);
+			name = ModalImage;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF5B08143E740C3777FEB0D3A952141C /* iOS */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		C47A77289224EAB7223A7D0A5B036671 /* Products */ = {
@@ -146,79 +207,44 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C5E73D3F8BC24CBFDE7012E37841984E /* Resources */ = {
+		FF5B08143E740C3777FEB0D3A952141C /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				B6F89ABF8906DAE9ADF4F503E690FBE2 /* ModalImageView.storyboard */,
+				DD46FBC041420035C341CC6342582587 /* UIKit.framework */,
 			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		E1240A452BDD7C41D272B34AC6B385C5 /* Pods-ModalImage_Example */ = {
-			isa = PBXGroup;
-			children = (
-				F7F8EF201C11221CC3E7F7AD5433E56F /* Pods-ModalImage_Example.modulemap */,
-				4432D4E627F747390F10EA42F3733CD2 /* Pods-ModalImage_Example-acknowledgements.markdown */,
-				B77701A5B99402E50FA2845C1E8AD892 /* Pods-ModalImage_Example-acknowledgements.plist */,
-				65864B9B683BB5C79AEF4B12AB051144 /* Pods-ModalImage_Example-dummy.m */,
-				5DC27B35482B415AAE9B43A5EE3FB3F0 /* Pods-ModalImage_Example-resources.sh */,
-				0DDAFAF0DFFCD5DAC2F80EF6FDDDEA39 /* Pods-ModalImage_Example-umbrella.h */,
-				718E78A38DFED9914A2ED9075E742A52 /* Pods-ModalImage_Example.debug.xcconfig */,
-				E419006D34E03BF9055FFCAB05B3BC53 /* Pods-ModalImage_Example.release.xcconfig */,
-			);
-			name = "Pods-ModalImage_Example";
-			path = "Target Support Files/Pods-ModalImage_Example";
-			sourceTree = "<group>";
-		};
-		FBBDDA0FEE4C310EA7D97D6B8D70C409 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				18A4205B6BEB728A9ADF5B7E04E56E55 /* ModalImage */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		FD2FF6F0650B2D89C5997B88A589473C /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				14F08CC21BF004558D41A3C974EDE16A /* CALayer+screenshot.swift */,
-				E6F608C3487D1DB95B76DE0F74F16D01 /* UIImageView+originalFrame.swift */,
-				CC10C45F322FA6E0E77BD3375C8EDBD8 /* UIViewController+ModalImageDelegate.swift */,
-			);
-			name = Extensions;
-			path = ModalImage/Extensions;
+			name = iOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		8786473A5AF8221EF9C824FBA99C71C3 /* Headers */ = {
+		0DB89AEFD4D21BAF23B91D36944360D8 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5EE1476BF91EAF225C28DC797EDFE1C /* ModalImage-umbrella.h in Headers */,
+				F4EBADB4B583604C8B3F40EF3E288278 /* Pods-ModalImage_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BC6528134DFF9CEFA70E2C081C83239C /* Headers */ = {
+		867202FAC3340AC6D9311E721240FDE1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A6FB5F649902DD991E5147471841B04 /* Pods-ModalImage_Example-umbrella.h in Headers */,
+				841E3FD3F8ED27AC7AA76EACEAE5F610 /* ModalImage-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		251C3DEB96D40AD0EAD9AB8BE9CD952E /* ModalImage */ = {
+		367CFAF7D4CC3C075AA872179239E3D9 /* ModalImage */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C2FFE3D8130E071B3772E219D0CECCEC /* Build configuration list for PBXNativeTarget "ModalImage" */;
+			buildConfigurationList = B93BF4E6A0AC7B5FB47E4F5C2C5774E2 /* Build configuration list for PBXNativeTarget "ModalImage" */;
 			buildPhases = (
-				8786473A5AF8221EF9C824FBA99C71C3 /* Headers */,
-				73D348B29BE749013145176D8ACE2C20 /* Sources */,
-				5B534D1D64AD19890BE2F8CDF4F58EF8 /* Frameworks */,
-				8B3B35107E61FFD7513B79BB09F7661E /* Copy generated compatibility header */,
+				4157353F5622840700DA92542011F10D /* Sources */,
+				A5C04B62DF845B2F33DC40233C6BE9DB /* Frameworks */,
+				867202FAC3340AC6D9311E721240FDE1 /* Headers */,
+				719211D8B900AD9FA03F2C936D3EFEC8 /* Copy generated compatibility header */,
 			);
 			buildRules = (
 			);
@@ -229,18 +255,18 @@
 			productReference = 748344119266EBD50C9E3F97D2020678 /* libModalImage.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		C9F92432A781D4CBBF73873A59097070 /* Pods-ModalImage_Example */ = {
+		B4D66B268A82EB37A17A09E005C3D604 /* Pods-ModalImage_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 373B501547DB02DACFF4B942FBD2F0C7 /* Build configuration list for PBXNativeTarget "Pods-ModalImage_Example" */;
+			buildConfigurationList = 33800815C9CC1B944C5A3C95D2B072D7 /* Build configuration list for PBXNativeTarget "Pods-ModalImage_Example" */;
 			buildPhases = (
-				BC6528134DFF9CEFA70E2C081C83239C /* Headers */,
-				8DB575C1540A360477A57E50FC26504F /* Sources */,
-				822D40F3C55FE0BA18396912D87A7C81 /* Frameworks */,
+				B7751F1B5F6EA14A42319A6DD8DA890C /* Sources */,
+				0D27DD483A852246230CC994CB291D5E /* Frameworks */,
+				0DB89AEFD4D21BAF23B91D36944360D8 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				276034D2AD54D7C80B9A40779BC5765A /* PBXTargetDependency */,
+				59BDF8002E83FCB3152860985AFC2A28 /* PBXTargetDependency */,
 			);
 			name = "Pods-ModalImage_Example";
 			productName = "Pods-ModalImage_Example";
@@ -254,7 +280,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 0930;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -268,19 +294,17 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				251C3DEB96D40AD0EAD9AB8BE9CD952E /* ModalImage */,
-				C9F92432A781D4CBBF73873A59097070 /* Pods-ModalImage_Example */,
+				367CFAF7D4CC3C075AA872179239E3D9 /* ModalImage */,
+				B4D66B268A82EB37A17A09E005C3D604 /* Pods-ModalImage_Example */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		8B3B35107E61FFD7513B79BB09F7661E /* Copy generated compatibility header */ = {
+		719211D8B900AD9FA03F2C936D3EFEC8 /* Copy generated compatibility header */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
@@ -288,8 +312,6 @@
 				"${PODS_ROOT}/Headers/Public/ModalImage/ModalImage-umbrella.h",
 			);
 			name = "Copy generated compatibility header";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
 				"${BUILT_PRODUCTS_DIR}/ModalImage-umbrella.h",
@@ -298,91 +320,46 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/ModalImage/ModalImage.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/ModalImage/ModalImage-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
+			showEnvVarsInLog = 1;
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		73D348B29BE749013145176D8ACE2C20 /* Sources */ = {
+		4157353F5622840700DA92542011F10D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45F206D3EB0C5107A171C5D79D2B9B18 /* CALayer+screenshot.swift in Sources */,
-				193B607F2093B0BF5E6680F47D74F90B /* ModalImage-dummy.m in Sources */,
-				617CF9A240DC6732A967C1CE931975A1 /* ModalImageDelegate.swift in Sources */,
-				82E3723F07C3287800DDDC1ECE5D803F /* ModalImageViewController.swift in Sources */,
-				E83B9163EE8029ABE0CDAF43988C65CE /* UIImageView+originalFrame.swift in Sources */,
-				57E3F55DFAD1C6A5FB6AD61EA047869A /* UIViewController+ModalImageDelegate.swift in Sources */,
+				845076C4D719AA50A5B05FD6A8624C73 /* Background.swift in Sources */,
+				8F579A8CE1DD82CDBCB02E6A3F11C381 /* CALayer+screenshot.swift in Sources */,
+				95BC21E7D8755C612DFA4257AC59B71C /* ModalImage-dummy.m in Sources */,
+				0A5A11EE85181BA88686FE72F95085E7 /* ModalImageDelegate.swift in Sources */,
+				467BBC5A07D7883C5759536083ED2F5D /* ModalImageViewController.swift in Sources */,
+				C5ACEC4BBAA77DE8756287C7FF98D211 /* UIImageView+originalFrame.swift in Sources */,
+				3DE9F3B8DFD594F6F533454C764FCC7C /* UIViewController+ModalImageDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8DB575C1540A360477A57E50FC26504F /* Sources */ = {
+		B7751F1B5F6EA14A42319A6DD8DA890C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD3C2B9D1332B1A97414DB079F13CAFD /* Pods-ModalImage_Example-dummy.m in Sources */,
+				EE59E2AC925D87004E1AF55A4D488244 /* Pods-ModalImage_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		276034D2AD54D7C80B9A40779BC5765A /* PBXTargetDependency */ = {
+		59BDF8002E83FCB3152860985AFC2A28 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ModalImage;
-			target = 251C3DEB96D40AD0EAD9AB8BE9CD952E /* ModalImage */;
-			targetProxy = 5921FD2135E33032A23C4271EA2B568E /* PBXContainerItemProxy */;
+			target = 367CFAF7D4CC3C075AA872179239E3D9 /* ModalImage */;
+			targetProxy = 719E70BD35791053703F508D45A1A83F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		3BBF033BDB1B53F0B73E097BE42B1E6E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 718E78A38DFED9914A2ED9075E742A52 /* Pods-ModalImage_Example.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ModalImage_Example/Pods-ModalImage_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		60E901B5126B00950910FD05CA0CB149 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E419006D34E03BF9055FFCAB05B3BC53 /* Pods-ModalImage_Example.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ModalImage_Example/Pods-ModalImage_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		749A3881BF507DF1FDBA73E79D292109 /* Debug */ = {
+		063198AB09B9CDB3A695432FC17AD8CA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -414,6 +391,171 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		181BED99DD86F6553072ECA560FE0E1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B20C4D52287A85EC6C76BF9C54EEF45B /* ModalImage.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/ModalImage/ModalImage-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MODULEMAP_FILE = Headers/Public/ModalImage/ModalImage.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = ModalImage;
+				PRODUCT_NAME = ModalImage;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		26EE18812FB1DD532E1F6E357F67A70E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B20C4D52287A85EC6C76BF9C54EEF45B /* ModalImage.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/ModalImage/ModalImage-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MODULEMAP_FILE = Headers/Public/ModalImage/ModalImage.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = ModalImage;
+				PRODUCT_NAME = ModalImage;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7324704E06980589A301C45DA7EFA38F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D67E3A6BD420C487701E2C118ADCFE4 /* Pods-ModalImage_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ModalImage_Example/Pods-ModalImage_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7AA7F8E81ED2FC69877DCB44D8854F9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69839F9598E4EE605705CC7C5673D922 /* Pods-ModalImage_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ModalImage_Example/Pods-ModalImage_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		87EAC867385563488A6D8F1E74AC46B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -433,132 +575,15 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_SWIFT_FLAGS = "-Xcc -Wno-incomplete-umbrella";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
-		};
-		8F6B8A914DBD9ED78C345061F2939DF8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C5916068CD8B1E35A04108D78E7305CC /* ModalImage.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/ModalImage/ModalImage-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				MODULEMAP_FILE = Headers/Public/ModalImage/ModalImage.modulemap;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = ModalImage;
-				PRODUCT_NAME = ModalImage;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		9470D76899AC95E321D4FC423C9F5840 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C5916068CD8B1E35A04108D78E7305CC /* ModalImage.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/ModalImage/ModalImage-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				MODULEMAP_FILE = Headers/Public/ModalImage/ModalImage.modulemap;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = ModalImage;
-				PRODUCT_NAME = ModalImage;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		A1CBB4736B5B4470080F6F91A81682DE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				OTHER_SWIFT_FLAGS = "-Xcc -Wno-incomplete-umbrella";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.2;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -566,26 +591,26 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				749A3881BF507DF1FDBA73E79D292109 /* Debug */,
-				A1CBB4736B5B4470080F6F91A81682DE /* Release */,
+				87EAC867385563488A6D8F1E74AC46B4 /* Debug */,
+				063198AB09B9CDB3A695432FC17AD8CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		373B501547DB02DACFF4B942FBD2F0C7 /* Build configuration list for PBXNativeTarget "Pods-ModalImage_Example" */ = {
+		33800815C9CC1B944C5A3C95D2B072D7 /* Build configuration list for PBXNativeTarget "Pods-ModalImage_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3BBF033BDB1B53F0B73E097BE42B1E6E /* Debug */,
-				60E901B5126B00950910FD05CA0CB149 /* Release */,
+				7AA7F8E81ED2FC69877DCB44D8854F9C /* Debug */,
+				7324704E06980589A301C45DA7EFA38F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C2FFE3D8130E071B3772E219D0CECCEC /* Build configuration list for PBXNativeTarget "ModalImage" */ = {
+		B93BF4E6A0AC7B5FB47E4F5C2C5774E2 /* Build configuration list for PBXNativeTarget "ModalImage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9470D76899AC95E321D4FC423C9F5840 /* Debug */,
-				8F6B8A914DBD9ED78C345061F2939DF8 /* Release */,
+				181BED99DD86F6553072ECA560FE0E1D /* Debug */,
+				26EE18812FB1DD532E1F6E357F67A70E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

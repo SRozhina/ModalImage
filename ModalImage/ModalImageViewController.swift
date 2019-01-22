@@ -33,19 +33,15 @@ public class ModalImageViewController: UIViewController {
     private var image: UIImage!
     
     private var primaryDuration = 0.25
-    private var backgroundColor: UIColor = .black
-    private var backgroundAlpha: CGFloat = 0.6
+    private var background: Background = Background()
     private var useNavbar: Bool = true
     private var useTabbar: Bool = true
-    private var backgroundBlur: Bool = false
     private var topScrollInset: CGFloat { return (scrollView.frame.height - imageView.frame.height) / 2.0 }
     private var statusBarStyle: UIStatusBarStyle = .lightContent
     
     public static func build(with imageView: UIImageView,
                              animationDuration: Double,
-                             backgroundColor: UIColor,
-                             backgroundAlpha: CGFloat,
-                             backgroundBlur: Bool,
+                             background: Background,
                              useNavbar: Bool,
                              useTabbar: Bool) -> ModalImageViewController? {
         let modalImageStoryboard = UIStoryboard(name: "ModalImageView",
@@ -55,9 +51,7 @@ public class ModalImageViewController: UIViewController {
         modalImageVC?.image = image
         modalImageVC?.originalImageFrame = frame
         modalImageVC?.primaryDuration = animationDuration
-        modalImageVC?.backgroundColor = backgroundColor
-        modalImageVC?.backgroundAlpha = backgroundAlpha
-        modalImageVC?.backgroundBlur = backgroundBlur
+        modalImageVC?.background = background
         modalImageVC?.useNavbar = useNavbar
         modalImageVC?.useTabbar = useTabbar
         return modalImageVC
@@ -112,7 +106,7 @@ public class ModalImageViewController: UIViewController {
     }
     
     private func setupBackground() {
-        if backgroundBlur {
+        if background.blur {
             dimmerLayer.isHidden = true
             let blurEffect = UIBlurEffect(style: .dark)
             let blurEffectView = UIVisualEffectView(effect: blurEffect)
@@ -122,9 +116,9 @@ public class ModalImageViewController: UIViewController {
             view.sendSubviewToBack(blurEffectView)
             return
         }
-        dimmerLayer.backgroundColor = backgroundColor
-        navBarDimmerLayer.backgroundColor = backgroundColor
-        tabBarDimmerLayer.backgroundColor = backgroundColor
+        dimmerLayer.backgroundColor = background.color
+        navBarDimmerLayer.backgroundColor = background.color
+        tabBarDimmerLayer.backgroundColor = background.color
     }
     
     private func setupGestureRecognizers() {
@@ -184,7 +178,7 @@ extension ModalImageViewController {
                         self.imageView.center = self.view.center
                         self.scrollView.contentInset.left = 0
                         self.scrollView.contentInset.top = (self.view.frame.height - contentHeight) / 2
-                        self.setBlackLayersAlpha(to: self.backgroundAlpha)
+                        self.setBlackLayersAlpha(to: self.background.alpha)
                         self.view.layoutIfNeeded()
         }, completion: completion)
     }
@@ -228,7 +222,7 @@ extension ModalImageViewController {
         case .changed:
             imageView.center = getChanged()
             if UIDevice.current.userInterfaceIdiom == .phone {
-                setBlackLayersAlpha(to: backgroundAlpha - (backgroundAlpha * getProgress()))
+                setBlackLayersAlpha(to: background.alpha - (background.alpha * getProgress()))
             }
         case .ended:
             if getProgress() > 0.5 || getVelocity() > 1000 {
@@ -240,7 +234,7 @@ extension ModalImageViewController {
             UIView.animate(withDuration: primaryDuration,
                            animations: {
                             self.imageView.frame.origin = CGPoint(x: 0, y: 0)
-                            self.setBlackLayersAlpha(to: self.backgroundAlpha)
+                            self.setBlackLayersAlpha(to: self.background.alpha)
             }, completion: nil)
         }
     }
