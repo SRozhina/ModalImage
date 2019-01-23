@@ -37,7 +37,6 @@ public class ModalImageViewController: UIViewController {
     private var useNavbar: Bool = true
     private var useTabbar: Bool = true
     private var topScrollInset: CGFloat { return (scrollView.frame.height - imageView.frame.height) / 2.0 }
-    private var statusBarStyle: UIStatusBarStyle = .lightContent
     
     public static func build(with imageView: UIImageView,
                              animationDuration: Double,
@@ -82,10 +81,6 @@ public class ModalImageViewController: UIViewController {
         }
     }
     
-    override public var preferredStatusBarStyle: UIStatusBarStyle {
-        return statusBarStyle
-    }
-    
     override public func accessibilityPerformEscape() -> Bool {
         dismissAction()
         return true
@@ -108,11 +103,13 @@ public class ModalImageViewController: UIViewController {
     private func setupBackground() {
         if background.blur {
             dimmerLayer.isHidden = true
+            statusBarView.backgroundColor = .clear
+            
             let blurEffect = UIBlurEffect(style: .dark)
             let blurEffectView = UIVisualEffectView(effect: blurEffect)
             blurEffectView.frame = view.bounds
-            blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
             view.addSubview(blurEffectView)
+            blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
             view.sendSubviewToBack(blurEffectView)
             return
         }
@@ -128,13 +125,13 @@ public class ModalImageViewController: UIViewController {
     private func dismissAction() {
         setNavBarStubIsHidden(false)
         setTabBarStubIsHidden(false)
-        changeStatusBarStyle()
         animateImageOut() { _ in
             self.dismiss(animated: false)
         }
     }
     
     private func setBlackLayersAlpha(to value: CGFloat) {
+        if background.blur { return }
         dimmerLayer.alpha = value
         navBarDimmerLayer.alpha = value
         tabBarDimmerLayer.alpha = value
@@ -149,11 +146,6 @@ public class ModalImageViewController: UIViewController {
     private func setTabBarStubIsHidden(_ value: Bool) {
         tabbarImageView.isHidden = value
         tabBarDimmerLayer.isHidden = value
-    }
-    
-    private func changeStatusBarStyle() {
-        statusBarStyle = statusBarStyle == .default ? .lightContent : .default
-        setNeedsStatusBarAppearanceUpdate()
     }
 }
 
