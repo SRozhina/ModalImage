@@ -9,7 +9,6 @@ An easy to use library for fulscreen modal image presentation with zooming capab
 
 Planned:
 - Implement image sharing
-- Blur background
 - Horizontal orientation support
 - Carthage support
 
@@ -45,16 +44,16 @@ And voila
 Additionally you could change background color and opacity.
 Just add a couple of parameters
 ```swift
-showFullScreenImage(from: imageView, backgroundColor: .yellow, backgroundAlpha: 1)
+showFullScreenImage(from: imageView, Background(color: .yellow, alpha: 1))
 ```
 <img src="./ReadmeGiffs/Example_default.gif" width="300"/><img src="./ReadmeGiffs/Example_background.gif" width="300"/>
 
 And of course you could use it separately.
 ```swift
-showFullScreenImage(from: imageView, backgroundColor: .yellow)
+showFullScreenImage(from: imageView, Background(color: .yellow))
 ```
 ```swift
-showFullScreenImage(from: imageView, backgroundAlpha: 1)
+showFullScreenImage(from: imageView, Background(alpha: 1))
 ```
 Default values for background color is black and for alpha is 0.6
 
@@ -81,8 +80,15 @@ Default values are true.
 
 To use all together use next initializer
 ```swift
-showFullScreenImage(from: imageView, animationDuration: 0.25, backgroundColor: .black, backgroundAlpha: 0.6, useNavbar: true, useTabbar: true)
+showFullScreenImage(from: imageView, animationDuration: 0.25, Background(color: .black, alpha: 0.6), useNavbar: true, useTabbar: true)
 ```
+There is possibility to show blur background for an image.
+```swift
+showFullScreenImageWithBlur(from: imageView, animationDuration: 0.25, backgroundColor: .darkGray, backgroundAlpha: 1)
+```
+<img src="./ReadmeGiffs/Example_Blur.gif" width="300"/>
+
+P.S. Don't use blur background with navbar and tabbar true flags.
 
 ## Author
 
