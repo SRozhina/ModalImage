@@ -33,17 +33,14 @@ public class ModalImageViewController: UIViewController {
     private var image: UIImage!
     
     private var primaryDuration = 0.25
-    private var backgroundColor: UIColor = .black
-    private var blackLayerAlpha: CGFloat = 0.6
+    private var background: Background = Background()
     private var useNavbar: Bool = true
     private var useTabbar: Bool = true
     private var topScrollInset: CGFloat { return (scrollView.frame.height - imageView.frame.height) / 2.0 }
-    private var statusBarStyle: UIStatusBarStyle = .lightContent
     
     public static func build(with imageView: UIImageView,
                              animationDuration: Double,
-                             backgroundColor: UIColor,
-                             blackLayerOpacity: CGFloat,
+                             background: Background,
                              useNavbar: Bool,
                              useTabbar: Bool) -> ModalImageViewController? {
         let modalImageStoryboard = UIStoryboard(name: "ModalImageView",
@@ -53,8 +50,7 @@ public class ModalImageViewController: UIViewController {
         modalImageVC?.image = image
         modalImageVC?.originalImageFrame = frame
         modalImageVC?.primaryDuration = animationDuration
-        modalImageVC?.backgroundColor = backgroundColor
-        modalImageVC?.blackLayerAlpha = blackLayerOpacity
+        modalImageVC?.background = background
         modalImageVC?.useNavbar = useNavbar
         modalImageVC?.useTabbar = useTabbar
         return modalImageVC
@@ -85,10 +81,6 @@ public class ModalImageViewController: UIViewController {
         }
     }
     
-    override public var preferredStatusBarStyle: UIStatusBarStyle {
-        return statusBarStyle
-    }
-    
     override public func accessibilityPerformEscape() -> Bool {
         dismissAction()
         return true
@@ -109,9 +101,21 @@ public class ModalImageViewController: UIViewController {
     }
     
     private func setupBackground() {
-        dimmerLayer.backgroundColor = backgroundColor
-        navBarDimmerLayer.backgroundColor = backgroundColor
-        tabBarDimmerLayer.backgroundColor = backgroundColor
+        if background.blur {
+            dimmerLayer.isHidden = true
+            statusBarView.backgroundColor = .clear
+            
+            let blurEffect = UIBlurEffect(style: .dark)
+            let blurEffectView = UIVisualEffectView(effect: blurEffect)
+            blurEffectView.frame = view.bounds
+            view.addSubview(blurEffectView)
+            blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+            view.sendSubviewToBack(blurEffectView)
+            return
+        }
+        dimmerLayer.backgroundColor = background.color
+        navBarDimmerLayer.backgroundColor = background.color
+        tabBarDimmerLayer.backgroundColor = background.color
     }
     
     private func setupGestureRecognizers() {
@@ -121,13 +125,13 @@ public class ModalImageViewController: UIViewController {
     private func dismissAction() {
         setNavBarStubIsHidden(false)
         setTabBarStubIsHidden(false)
-        changeStatusBarStyle()
         animateImageOut() { _ in
             self.dismiss(animated: false)
         }
     }
     
     private func setBlackLayersAlpha(to value: CGFloat) {
+        if background.blur { return }
         dimmerLayer.alpha = value
         navBarDimmerLayer.alpha = value
         tabBarDimmerLayer.alpha = value
@@ -142,11 +146,6 @@ public class ModalImageViewController: UIViewController {
     private func setTabBarStubIsHidden(_ value: Bool) {
         tabbarImageView.isHidden = value
         tabBarDimmerLayer.isHidden = value
-    }
-    
-    private func changeStatusBarStyle() {
-        statusBarStyle = statusBarStyle == .default ? .lightContent : .default
-        setNeedsStatusBarAppearanceUpdate()
     }
 }
 
@@ -171,7 +170,7 @@ extension ModalImageViewController {
                         self.imageView.center = self.view.center
                         self.scrollView.contentInset.left = 0
                         self.scrollView.contentInset.top = (self.view.frame.height - contentHeight) / 2
-                        self.setBlackLayersAlpha(to: self.blackLayerAlpha)
+                        self.setBlackLayersAlpha(to: self.background.alpha)
                         self.view.layoutIfNeeded()
         }, completion: completion)
     }
@@ -215,7 +214,7 @@ extension ModalImageViewController {
         case .changed:
             imageView.center = getChanged()
             if UIDevice.current.userInterfaceIdiom == .phone {
-                setBlackLayersAlpha(to: blackLayerAlpha - (blackLayerAlpha * getProgress()))
+                setBlackLayersAlpha(to: background.alpha - (background.alpha * getProgress()))
             }
         case .ended:
             if getProgress() > 0.5 || getVelocity() > 1000 {
@@ -227,7 +226,7 @@ extension ModalImageViewController {
             UIView.animate(withDuration: primaryDuration,
                            animations: {
                             self.imageView.frame.origin = CGPoint(x: 0, y: 0)
-                            self.setBlackLayersAlpha(to: self.blackLayerAlpha)
+                            self.setBlackLayersAlpha(to: self.background.alpha)
             }, completion: nil)
         }
     }

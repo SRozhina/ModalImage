@@ -1,1 +1,6 @@
-/Users/sofia/Documents/Projects/ModalImage/Example/Pods/Target Support Files/ModalImage/ModalImage.modulemap
+module ModalImage {
+  umbrella header "ModalImage-umbrella.h"
+
+  export *
+  module * { export * }
+}

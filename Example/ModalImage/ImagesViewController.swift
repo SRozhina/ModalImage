@@ -61,7 +61,7 @@ extension ImagesViewController: UITableViewDataSource, UITableViewDelegate {
         if navigationController != nil {
             showFullScreenImage(from: imageView)
         } else {
-            showFullScreenImage(from: imageView, animationDuration: 0.5, backgroundColor: .darkGray, backgroundAlpha: 1)
+            showFullScreenImageWithBlur(from: imageView, animationDuration: 0.5, backgroundColor: .darkGray, backgroundAlpha: 1)
         }
     }
 }
