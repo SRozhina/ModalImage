@@ -61,6 +61,7 @@ public class ModalImageViewController: UIViewController {
         
         accessibilityViewIsModal = true
         
+        addObservers()
         setupImageViews()
         setupBarsStubs()
         setupBackground()
@@ -84,6 +85,35 @@ public class ModalImageViewController: UIViewController {
     override public func accessibilityPerformEscape() -> Bool {
         dismissAction()
         return true
+    }
+    
+    private func addObservers() {
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(updateRotatedView),
+                                               name: UIDevice.orientationDidChangeNotification,
+                                               object: nil)
+    }
+    
+    @objc
+    private func updateRotatedView() {
+        var contentHeight = image.size.height * (view.frame.width / image.size.width)
+        var contentWidth = view.frame.width
+        var contentInsetLeft: CGFloat = 0
+        var contentInsetTop = (view.frame.height - contentHeight) / 2
+        
+        if view.frame.width > view.frame.height {
+            contentHeight = view.frame.height
+            contentWidth = image.size.width * (view.frame.height / image.size.height)
+            contentInsetLeft = (view.frame.width - contentWidth) / 2
+            contentInsetTop = 0
+        }
+        
+        self.imageHeight.constant = contentHeight
+        self.imageWidth.constant = contentWidth
+        self.imageView.center = self.view.center
+        self.scrollView.contentInset.left = contentInsetLeft
+        self.scrollView.contentInset.top = contentInsetTop
+        self.view.layoutSubviews()
     }
     
     private func setupImageViews() {
