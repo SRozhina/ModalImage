@@ -164,7 +164,7 @@ extension ModalImageViewController {
         var contentInsetLeft: CGFloat = 0
         var contentInsetTop = (view.frame.height - contentHeight) / 2
         
-        if view.frame.width < view.frame.height {
+        if view.frame.width > view.frame.height {
             contentHeight = view.frame.height
             contentWidth = image.size.width * (view.frame.height / image.size.height)
             contentInsetLeft = (view.frame.width - contentWidth) / 2
