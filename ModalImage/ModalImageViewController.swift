@@ -159,17 +159,27 @@ extension ModalImageViewController {
     }
     
     private func animateImageIn(completion: @escaping ((Bool) -> Void)) {
-        let contentHeight = image.size.height * (view.frame.width / image.size.width)
+        var contentHeight = image.size.height * (view.frame.width / image.size.width)
+        var contentWidth = view.frame.width
+        var contentInsetLeft: CGFloat = 0
+        var contentInsetTop = (view.frame.height - contentHeight) / 2
+        
+        if view.frame.width < view.frame.height {
+            contentHeight = view.frame.height
+            contentWidth = image.size.width * (view.frame.height / image.size.height)
+            contentInsetLeft = (view.frame.width - contentWidth) / 2
+            contentInsetTop = 0
+        }
         
         UIView.animate(withDuration: primaryDuration,
                        delay: 0,
                        options: [.curveEaseIn],
                        animations: {
                         self.imageHeight.constant = contentHeight
-                        self.imageWidth.constant = self.view.frame.width
+                        self.imageWidth.constant = contentWidth
                         self.imageView.center = self.view.center
-                        self.scrollView.contentInset.left = 0
-                        self.scrollView.contentInset.top = (self.view.frame.height - contentHeight) / 2
+                        self.scrollView.contentInset.left = contentInsetLeft
+                        self.scrollView.contentInset.top = contentInsetTop
                         self.setBlackLayersAlpha(to: self.background.alpha)
                         self.view.layoutIfNeeded()
         }, completion: completion)

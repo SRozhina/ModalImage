@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -93,7 +92,7 @@
                             <constraint firstItem="T9E-vt-IjB" firstAttribute="trailing" secondItem="owL-WE-nzE" secondAttribute="trailing" id="QLt-jQ-BNY"/>
                             <constraint firstItem="aHN-Yg-ieO" firstAttribute="top" secondItem="qwO-B7-dLS" secondAttribute="top" id="Qdc-oq-Ec4"/>
                             <constraint firstItem="Va0-0W-emC" firstAttribute="top" secondItem="qwO-B7-dLS" secondAttribute="top" id="WTh-Dw-6qI"/>
-                            <constraint firstItem="Va0-0W-emC" firstAttribute="leading" secondItem="T9E-vt-IjB" secondAttribute="leading" id="WhK-NG-TL3"/>
+                            <constraint firstItem="Va0-0W-emC" firstAttribute="leading" secondItem="qwO-B7-dLS" secondAttribute="leading" id="WhK-NG-TL3"/>
                             <constraint firstItem="l09-eG-u1R" firstAttribute="leading" secondItem="owL-WE-nzE" secondAttribute="leading" id="X44-Md-wU2"/>
                             <constraint firstAttribute="trailing" secondItem="aHN-Yg-ieO" secondAttribute="trailing" id="azu-cP-pWB"/>
                             <constraint firstItem="owL-WE-nzE" firstAttribute="top" secondItem="fe7-1b-Hxh" secondAttribute="bottom" id="cbB-Ib-bHL"/>
@@ -105,7 +104,7 @@
                             <constraint firstItem="Wwe-hJ-yrJ" firstAttribute="leading" secondItem="T9E-vt-IjB" secondAttribute="leading" id="rjG-pB-NZO"/>
                             <constraint firstAttribute="bottom" secondItem="Wwe-hJ-yrJ" secondAttribute="bottom" id="rkc-ZT-hb4"/>
                             <constraint firstItem="aHN-Yg-ieO" firstAttribute="leading" secondItem="qwO-B7-dLS" secondAttribute="leading" id="s6g-AI-EOM"/>
-                            <constraint firstItem="T9E-vt-IjB" firstAttribute="trailing" secondItem="Va0-0W-emC" secondAttribute="trailing" id="vSY-ks-a0f"/>
+                            <constraint firstAttribute="trailing" secondItem="Va0-0W-emC" secondAttribute="trailing" id="vSY-ks-a0f"/>
                             <constraint firstItem="XNV-fG-not" firstAttribute="bottom" secondItem="Wwe-hJ-yrJ" secondAttribute="bottom" id="vlF-a3-UsD"/>
                             <constraint firstItem="l09-eG-u1R" firstAttribute="trailing" secondItem="owL-WE-nzE" secondAttribute="trailing" id="yLx-Ex-Mh9"/>
                         </constraints>
